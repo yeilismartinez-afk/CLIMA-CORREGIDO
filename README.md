@@ -33,8 +33,7 @@ Contiene la información de autoría y el propósito del software:
 -Versión/Año: 2026.
 -Descripción: Breve resumen del objetivo de la aplicación.
 
-
-## INSTALACIONg
+## INSTALACION
 Se hizo a traves de la pag githug https://github.com
 
 ## METODOLOGÍA APLICADA 
