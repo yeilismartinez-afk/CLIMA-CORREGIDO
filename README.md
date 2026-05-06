@@ -37,6 +37,14 @@ Contiene la información de autoría y el propósito del software:
 ## INSTALACIONg
 Se hizo a traves de la pag githug https://github.com
 
+## METODOLOGÍA APLICADA 
+
+Este código utiliza principalmente la metodología BEM (Block, Element, Modifier), aunque de forma híbrida o parcial.
+La arquitectura (estilo SMACSS).
+
+## ESTRUCTURAS DE CARPETAS SASS
+Es un proyecto que aún esta en construcción se uso la Carpeta Abstracts/ con una hoja de documento general, donde estan ubicados los estilo generales de la estructura. Componentes/ donde se uso solo el archivo de cards.css donde estan ubicados los estilos generales de mis card. Del mismo modo se uso la carpeta Layout/ con los archivos container, footer y header tambien contienen los estilos según corresponde cada archivo, por último se uso el archivo main para compilar y llamar a todos mis estilos. 
+
 ## USOS
 Dar click sobre ver detalles para irse al estado semanal
 
