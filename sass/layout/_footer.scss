@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer-container {
+  .badge {
+    padding: 0.6em 1em;
+    font-size: 0.85rem;
+    border-radius: 20px; 
+  }
+}
+
+footer {
+    background-color: #72aadf;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    color: #2e0bf3;
+}

@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+.l-header {
+  text-align: center;
+  background: linear-gradient(135deg, #7295d6 0%, #2a7b98 100%);
+  color: white;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

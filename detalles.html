@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronóstico del Clima - 7 Días</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .weather-card {
+      transition: transform 0.2s;
+      border: none;
+    }
+
+    .weather-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-lg {
+      font-size: 2.5rem;
+    }
+
+    body {
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      min-height: 100vh;
+      
+    }
+  </style>
+</head>
+ <header>
+ <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Inicio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.htm"
+              >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  </header>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Pronóstico 7 Días</h2>
+
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-7 g-3">
+
+      <div class="col">
+        <div class="card weather-card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Lun</h6>
+            <div class="icon-lg my-2">☀️</div>
+            <h4 class="card-text fw-bold">25°</h4>
+            <p class="card-text text-muted small">Despejado</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card weather-card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Mar</h6>
+            <div class="icon-lg my-2">🌤️</div>
+            <h4 class="card-text fw-bold">23°</h4>
+            <p class="card-text text-muted small">Nublado</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card weather-card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Mié</h6>
+            <div class="icon-lg my-2">🌦️</div>
+            <h4 class="card-text fw-bold">21°</h4>
+            <p class="card-text text-muted small">Lluvia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card weather-card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Jue</h6>
+            <div class="icon-lg my-2">⛈️</div>
+            <h4 class="card-text fw-bold">19°</h4>
+            <p class="card-text text-muted small">Tormenta</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card weather-card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Vie</h6>
+            <div class="icon-lg my-2">⛅</div>
+            <h4 class="card-text fw-bold">22°</h4>
+            <p class="card-text text-muted small">Parcial</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col">
+        <div class="card weather-card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Sabado</h6>
+            <div class="icon-lg my-2">☀️</div>
+            <h4 class="card-text fw-bold">17°</h4>
+            <p class="card-text text-muted small">Despejado</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card weather-card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-muted">Domingo</h6>
+            <div class="icon-lg my-2">⛈️</div>
+            <h4 class="card-text fw-bold">11°</h4>
+            <p class="card-text text-muted small">Tormenta</p>
+          </div>
+        </div>
+      </div>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
