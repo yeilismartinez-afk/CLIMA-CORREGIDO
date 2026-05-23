@@ -13,9 +13,10 @@ footer {
 
 
 .polen-grid {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+ display: flex;
+gap: 15px;
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
 .polen-badge {
@@ -23,6 +24,7 @@ footer {
     border-radius: 20px;
     font-weight: bold;
     color: white;
+    
 }
 
 .green { background-color: #28a745; }
