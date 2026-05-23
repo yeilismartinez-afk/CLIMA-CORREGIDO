@@ -1,5 +1,4 @@
 
-// 1. Estructuras de datos (Arreglos y Objetos) para los 10 lugares
 const datosClima = [
     {
         id: "osorno", nombre: "Osorno", tempActual: 18, humedad: 20, viento: 15, icono: "☀️",
@@ -165,14 +164,14 @@ function mostrarDetalle(id) {
     const ciudad = datosClima.find(c => c.id === id);
     if (!ciudad) return;
 
-    // Cambiar vistas
+
     homeView.classList.add("hidden");
     detailView.classList.remove("hidden");
 
     // Asignar Nombre
     document.getElementById("detail-ciudad-nombre").innerText = `Clima en ${ciudad.nombre}`;
 
-    // Renderizar lista semanal
+    // lista semanal
     const containerSemana = document.getElementById("pronostico-semanal-container");
     containerSemana.innerHTML = "";
     
@@ -189,7 +188,7 @@ function mostrarDetalle(id) {
         containerSemana.appendChild(minicard);
     });
 
-    // 3. Procesar datos empleando Ciclos y Condicionales
+    // 3. Ciclos y Condicionales
     calcularYMostrarEstadisticas(ciudad.pronosticoSemanal);
 }
 
@@ -200,18 +199,18 @@ function calcularYMostrarEstadisticas(pronostico) {
     
     let conteoClimas = { Soleado: 0, Lluvioso: 0, Nublado: 0 };
 
-    // Ciclo para procesar métricas
+  
     for (let i = 0; i < pronostico.length; i++) {
         const dia = pronostico[i];
         
-        // Mínimo y Máximo absoluto
+        // Mínimo y Máximo 
         if (dia.min < minTotal) minTotal = dia.min;
         if (dia.max > maxTotal) maxTotal = dia.max;
         
         // Sumar para el promedio general
         sumaTemp += (dia.min + dia.max) / 2;
 
-        // Sentencias condicionales para conteo de tipos de clima
+        // Sentencias condicionales 
         if (dia.estado === "Soleado") {
             conteoClimas.Soleado++;
         } else if (dia.estado === "Lluvioso") {
@@ -231,7 +230,6 @@ function calcularYMostrarEstadisticas(pronostico) {
     document.getElementById("stat-lluvioso").innerText = conteoClimas.Lluvioso;
     document.getElementById("stat-nublado").innerText = conteoClimas.Nublado;
 
-    // Mensaje de resumen inteligente autogenerado
     let resumenMsg = `La semana presentará temperaturas entre los ${minTotal}°C y los ${maxTotal}°C con una media de ${promedio}°C. `;
     if (conteoClimas.Lluvioso > conteoClimas.Soleado) {
         resumenMsg += "Tendencia a días muy húmedos y precipitaciones constantes. Se aconseja llevar paraguas.";
@@ -244,7 +242,6 @@ function calcularYMostrarEstadisticas(pronostico) {
     document.getElementById("stat-resumen").innerText = resumenMsg;
 }
 
-// Eventos de Navegación
 function irAHome() {
     detailView.classList.add("hidden");
     homeView.classList.remove("hidden");
@@ -253,5 +250,5 @@ function irAHome() {
 btnHome.addEventListener("click", (e) => { e.preventDefault(); irAHome(); });
 btnBack.addEventListener("click", irAHome);
 
-// Inicialización de la App
+
 renderizarHome();

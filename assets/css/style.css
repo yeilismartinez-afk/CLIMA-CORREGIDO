@@ -1,0 +1,151 @@
+:root {
+  --bg-gradient: linear-gradient(180deg, #73bdc7, #7896d6, #4a90e2);
+  --card-bg: rgba(136, 37, 37, 0.15);
+  --card-blur: blur(10px);
+  --text-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-gradient) no-repeat fixed;
+  background-size: cover;
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+header {
+  background-color: #6250e8;
+  padding: 15px 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.polen-container {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+.polen-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.polen-badge {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.green {
+  background-color: #28a745;
+}
+
+.orange {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.red {
+  background-color: #dc3545;
+}
+
+.blue {
+  background-color: #17a2b8;
+}
+
+.stats-panel {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.resumen-msg {
+  font-style: italic;
+  color: #efeee7;
+}
+
+nav a, .logo {
+  color: rgb(242, 232, 232);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  background: var(--card-bg);
+  backdrop-filter: var(--card-blur);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.card .temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.card .meta {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */

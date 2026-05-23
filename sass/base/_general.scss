@@ -1,23 +1,27 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: $light;
-  background: linear-gradient(135deg, #4eb7a4 0%, #524190 100%);
+ body { 
+     margin: 0; 
+     font-family: Arial, sans-serif; 
+     background: var(--bg-gradient) no-repeat fixed; 
+     background-size: cover; 
+     color: var(--text-color); 
+     min-height: 100vh; 
+} 
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+} 
+
+
+header {
+    background-color: #6250e8;
+    padding: 15px 30px;
+  
 }
 
-h1,
-h2,
-h5 {
-  font-weight: bold;
-  color: rgb(240, 250, 255);
-  text-align: center 80px;
-}
-a {
-  color: $dark;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
+
+

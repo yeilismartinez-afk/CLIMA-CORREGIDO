@@ -1,21 +1,15 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.card {
+    background: var(--card-bg);
+    backdrop-filter: var(--card-blur);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
 
-.m-card-weather {
-  background-color: #88bdd2;
-  color: #fff;
-}
-.m-card-weather__icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
-}
-.m-card-weather__city {
-  font-size: 1.2rem;
-  margin-bottom: 55px;
-}
-.m-card-weather__temp {
-  font-size: 2.5rem;
-  margin-bottom: 0px;
-}
+.card h2 { margin: 0 0 15px 0; font-size: 1.2rem; }
+.card .temp { font-size: 2.5rem; font-weight: bold; margin: 15px 0; }
+.card .meta { display: flex; justify-content: space-around; font-size: 0.8rem; opacity: 0.9; }

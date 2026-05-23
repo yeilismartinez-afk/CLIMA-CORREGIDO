@@ -1,23 +1,43 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.footer-container {
-  .badge {
-    padding: 0.6em 1em;
-    font-size: 0.85rem;
-    border-radius: 20px; 
-  }
-}
-
 footer {
-    background-color: #72aadf;
-    padding: 20px;
     text-align: center;
-    border-top: 1px solid #ddd;
-    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    margin-top: 50px;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    display: flex;
+} 
+
+
+.polen-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.footer-content p {
-    margin: 10px 0;
-    color: #2e0bf3;
+.polen-badge {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.green { background-color: #28a745; }
+.orange { background-color: #ffc107; color: #333; }
+.red { background-color: #dc3545; }
+.blue { background-color: #17a2b8; }
+
+.stats-panel {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.resumen-msg {
+    font-style: italic;
+    color: #efeee7;
 }
