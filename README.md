@@ -18,7 +18,7 @@ conografía, ilustraciones que representan el estado del cielo (soleado, nublado
 
 - Métricas Detalladas: Porcentaje de humedad y velocidad del viento.
 
-- Botón de Acción: Acceso a "Ver detalles" para información expandida.
+- Botón de Acción: Acceso a "Ver detalles" para información expandida de temperatura y el promedio de temperatura en la semana
 
 3. Monitor de Niveles de Polen
 Una sección especializada para usuarios con sensibilidades alérgicas. Clasifica la calidad del aire mediante un código de colores:
