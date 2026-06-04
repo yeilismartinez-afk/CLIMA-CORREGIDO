@@ -1,0 +1,47 @@
+#home-view, #detail-view {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.polen-container {
+  background-color: $text-light;
+  color: $text-dark;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 40px;
+  box-shadow: $card-shadow;
+
+  h3 { color: $text-dark; margin-top: 0; border-left: 4px solid $navbar-bg; }
+}
+
+.polen-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.stats-panel {
+  background: $card-bg;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: $card-shadow;
+  
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+
+    li {
+      padding: 12px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      font-size: 1.05rem;
+      strong { display: block; margin-bottom: 5px; color: lighten($navbar-bg, 30%); }
+    }
+  }
+}

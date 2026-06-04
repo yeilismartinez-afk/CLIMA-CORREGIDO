@@ -11,8 +11,19 @@ El proyecto se divide en las siguientes secciones clave, tal como se muestra en 
  - Inicio: Regresa a la vista principal.
 
 2. Panel Principal de Ciudades
+
+- Se uso API mateo
+
 - El núcleo de la aplicación muestra tarjetas  para ciudades clave (Osorno, Valdivia, Santiago, etc.). Cada tarjeta incluye:
 conografía, ilustraciones que representan el estado del cielo (soleado, nublado, lluvia).
+
+- En las tarjetas pricipales usar el boton Ver detalles para verificar Pronóstico Diario: Visualización de temperaturas máximas, mínimas y estado del cielo para los próximos 7 días.
+
+* **Estadísticas Semanales:** Cálculo automático de métricas consolidadas:
+  * Temperatura mínima y máxima de la semana.
+  * Temperatura promedio general.
+  * Contador de días soleados y días de lluvia registrados.
+* **Alertas Climáticas:** Sistema de notificaciones inteligentes basado en condiciones severas de precipitación.
 
 - Datos Principales: Temperatura actual.
 

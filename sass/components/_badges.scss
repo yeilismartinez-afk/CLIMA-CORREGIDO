@@ -1,0 +1,40 @@
+.polen-badge {
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: $text-light;
+  text-align: center;
+  display: inline-block;
+
+  &.green { background-color: $color-green; }
+  &.orange { background-color: $color-orange; }
+  &.red { background-color: $color-red; }
+  &.blue { background-color: $color-blue; }
+}
+
+.alert-badge {
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: $card-shadow;
+  
+  &.heat-alert {
+    background-color: #d35400;
+    border: 2px solid #e67e22;
+    color: $text-light;
+  }
+  &.rain-alert {
+    background-color: #2980b9;
+    border: 2px solid #3498db;
+    color: $text-light;
+  }
+  &.normal-alert {
+    background-color: #27ae60;
+    border: 2px solid #2ecc71;
+    color: $text-light;
+  }
+}

@@ -1,11 +1,11 @@
-@use "abstracts/variables" as *;
-@use "abstracts/mixins" as *;
-@use "base/general";
-@use "layout/container";
-@use "layout/footer";
-@use "layout/header";
-@use "components/btn";
-@use "components/card";
+@import 'base/variables';
+@import 'base/reset';
+@import 'components/badges';
+@import 'components/buttons';
+@import 'layout/container';
+@import 'layout/grid';
+@import 'layout/views';
+
 
 
 

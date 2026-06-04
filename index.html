@@ -3,66 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación de Clima</title>
+    <title> Clima - Open-Meteo API</title>
+    <link rel="stylesheet" href="./css/main.css"> 
     <link rel="stylesheet" href="./assets/css/style.css">
-    
 </head>
-
 <body>
+
     <header>
-        
-        <nav>
-            <span class="logo">Inicio</span>
-            <a href="#" id="btn-home">Home</a>
+        <span class="logo" id="nav-logo">Inicio</span>
+         <a href="#" id="btn-home">Home</a>
             <a href="#">Features</a>
-        </nav>
     </header>
 
     <main class="container">
         
+        <!-- VISTA HOME -->
         <section id="home-view">
-            <h1>CLIMA</h1>
-            <div id="grid-ciudades" class="grid-container"></div>
+            <h1>Clima</h1>
+            
+            <div id="grid-ciudades" class="grid-container">
+                <!-- Se inyecta la data de la API aquí -->
+            </div>
             
             <div class="polen-container">
                 <h3>Niveles de Polen</h3>
                 <div class="polen-grid">
                     <span class="polen-badge green">Polen de pasto: Bueno</span>
                     <span class="polen-badge orange">Polen: Poco Saludable</span>
-                    <span class="polen-badge red">Polen de Ambrosía</span>
+                    <span class="polen-badge red">Polen de ambrosía</span>
                     <span class="polen-badge blue">Polen de árbol</span>
                 </div>
             </div>
         </section>
 
-        <!-- Vista de Detalle -->
+        <!-- VISTA DE DETALLE -->
         <section id="detail-view" class="hidden">
-            <button id="btn-back" class="btn-primary">← Volver al Inicio</button>
+            <button id="btn-back" class="btn-primary">← Volver al inicio</button>
+            
             <h2 id="detail-ciudad-nombre">Ciudad</h2>
             
-            <h3>Pronóstico Diario (Semana)</h3>
-            <div id="pronostico-semanal-container" class="grid-container"></div>
-
+            <h3>Pronóstico diario (Semana)</h3>
+            <div id="pronostico-semanal-container" class="grid-container">
+                <!-- Se inyecta el pronóstico extendido desde JS -->
+            </div>
+            
             <h3>Estadísticas de la semana</h3>
-            <div class="stats-panel">
-                <p><strong>Temperatura Mínima:</strong> <span id="stat-min">-</span>°C</p>
-                <p><strong>Temperatura Máxima:</strong> <span id="stat-max">-</span>°C</p>
-                <p><strong>Temperatura Promedio:</strong> <span id="stat-avg">-</span>°C</p>
-                <hr>
-                <p><strong>Días Soleados:</strong> <span id="stat-soleado">-</span></p>
-                <p><strong>Días Lluviosos:</strong> <span id="stat-lluvioso">-</span></p>
-                <p><strong>Días Nublados:</strong> <span id="stat-nublado">-</span></p>
-                <hr>
-                <p id="stat-resumen" class="resumen-msg"></p>
+            <div id="stats-container" class="stats-panel">
+                <!-- Inyección de estadísticas desde JS -->
+            </div>
+
+            <h3>Alertas de clima</h3>
+            <div id="alerts-container">
+                <!-- Inyección de alertas desde JS -->
             </div>
         </section>
-    </main>
 
-    <footer>
+        <footer>
         <p>Autor: Yeilis Martínez</p>
         <p>Año: 2026</p>
     </footer>
 
-    <script src="./assets/js/prueba.js"></script>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
+
